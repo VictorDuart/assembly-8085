@@ -1,4 +1,4 @@
-//divisão de dois numeros de 8 bits
+//divisÃ£o de dois numeros de 8 bits
 //IN -> reg A / reg B
 //OUT -> resultado = reg C, resto = reg D
 # ORG 2000
@@ -6,9 +6,14 @@
 	   MVI A,07
 	   MVI B,02
 	   MVI C,00
+	   CALL FUNC
+	   MOV D,A
+	   HLT
 
-LOOP:	   SUB B
+FUNC:      SUB B
 	   CMP B
 	   INR C
-	   JNC LOOP
-	   MOV D,A
+	   JNC FUNC
+	   RC
+	   
+	   

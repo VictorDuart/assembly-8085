@@ -21,8 +21,8 @@
 	   MOV L,E
 	   HLT
 // busca o menor numero na sequencia de N bytes
-// entrada - C = N bytes, HL = endereço inicial
-// saída - A = menor numero
+// entrada - C = N bytes, HL = endereÃ§o inicial
+// saÃ­da - A = menor numero
 
 MIN:	   INR L
 	   CMP M
@@ -31,8 +31,8 @@ MIN:	   INR L
 	   JNZ MIN
 	   RET
 // busca o maior numero na sequencia de N bytes
-// entrada - C = N bytes, HL = endereço inicial
-// saída - A = maior numero
+// entrada - C = N bytes, HL = endereÃ§o inicial
+// saÃ­da - A = maior numero
 
 MAX:	   INR L
 	   CMP M
@@ -40,7 +40,7 @@ MAX:	   INR L
 	   DCR C
 	   JNZ MAX
 	   RET
-// função auxiliar que realiza a troca entre registradores
+// funÃ§Ã£o auxiliar que realiza a troca entre registradores
 // entrada - reg A reg B par HL
 // saida - reg A reg B
 

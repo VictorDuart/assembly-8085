@@ -6,10 +6,14 @@
 	   MVI A,07
 	   MVI B,02
 	   MVI C,00
-
-LOOP:	   SUB B
-	   CMP B
-	   INR C
-	   JNC LOOP
+	   CALL FUNC
 	   MOV D,A
 	   HLT
+
+FUNC:      SUB B
+	   CMP B
+	   INR C
+	   JNC FUNC
+	   RC
+	   
+	   

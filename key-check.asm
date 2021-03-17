@@ -10,10 +10,10 @@
 # PARADA: DB 80
 # ORG 2000
 # BEGIN 2000
-//realiza-se a comparaÁ„o da mascara para chave ON/OFF 
-//da vari·vel 0101 1101, caso a mascara bata acrescenta-se 1
-//na vari·vel de chaves abertas, caso contr·rio acrescenta-se 1 na
-//vari·vel de chaves fechadas
+//realiza-se a compara√ß√£o da mascara para chave ON/OFF 
+//da vari√°vel 0101 1101, caso a mascara bata acrescenta-se 1
+//na vari√°vel de chaves abertas, caso contr√°rio acrescenta-se 1 na
+//vari√°vel de chaves fechadas
 	   LDA MASCARA
 	   LXI H,ONOFF
 	   ANA M
@@ -24,7 +24,7 @@
 # ORG 3000
 # BEGIN 3000
 //incrementa 1 para chaves abertas
-//a condiÁ„o de parada È quando o bit MSB da mascara for para o carry
+//a condi√ß√£o de parada √© quando o bit MSB da mascara for para o carry
 	   LXI H,ON
 	   INR M
 	   LDA MASCARA
@@ -35,7 +35,7 @@
 # ORG 4000
 # BEGIN 4000
 //incrementa 1 para chaves fechadas
-//a condiÁ„o de parada È quando o bit MSB da mascara for para o carry
+//a condi√ß√£o de parada √© quando o bit MSB da mascara for para o carry
 	   LXI H,OFF
 	   INR M
 	   LDA 1250

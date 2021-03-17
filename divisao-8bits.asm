@@ -1,4 +1,4 @@
-//divisão de dois numeros de 8 bits
+//divisÃ£o de dois numeros de 8 bits
 //IN -> reg A / reg B
 //OUT -> resultado = reg C, resto = reg D
 # ORG 2000
@@ -12,3 +12,4 @@ LOOP:	   SUB B
 	   INR C
 	   JNC LOOP
 	   MOV D,A
+	   HLT

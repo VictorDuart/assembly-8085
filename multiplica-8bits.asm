@@ -9,8 +9,7 @@
 	   MOV E,A
 	   HLT
 
-MULTI:	   MVI B, 00
-	   MOV A,D
+MULTI:	   MOV A,D
 	   ADD B
 	   MOV B,A
 	   DCR C

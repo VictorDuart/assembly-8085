@@ -1,6 +1,6 @@
-// multiplicação de dois números de 8 bits
+// multiplicaÃ§Ã£o de dois nÃºmeros de 8 bits
 // in -> reg C * reg D
-// out -> resultado reg E
+// out -> resultado reg A
 # ORG 2000
 # BEGIN 2000
 	   MVI C,02

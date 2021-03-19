@@ -1,8 +1,8 @@
 // O algoritmo calcula os primeiros N elementos de uma PA.
-// a1 È armazenado em 0800H da memÛria
-// n È armazenado em 0850H da memÛria
-// r È armazenado em 0900H da memÛria
-// Os elementos s„o armazenados a partir do endereÁo 5001
+// a1 √© armazenado em 0800H da mem√≥ria
+// n √© armazenado em 0850H da mem√≥ria
+// r √© armazenado em 0900H da mem√≥ria
+// Os elementos s√£o armazenados a partir do endere√ßo 5001
 # ORG 800
 # DB 02
 # ORG 850

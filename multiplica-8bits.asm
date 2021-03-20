@@ -5,7 +5,9 @@
 # BEGIN 2000
 	   MVI C,02
 	   MVI D,03
+	   PUSH B
 	   CALL MULTI
+	   POP B
 	   MOV E,A
 	   HLT
 
